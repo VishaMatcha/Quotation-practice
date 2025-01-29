@@ -33,8 +33,9 @@ npm install
 ```bash
 node server.js
 ```
-🐳 Running with Docker
-1️⃣ Build the Docker Image
+## 🐳 Running with Docker
+
+### **1️⃣ Build the Docker Image**
 ```bash
 docker build -t motivational-quotes-app .
 ```
