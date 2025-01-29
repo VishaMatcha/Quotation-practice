@@ -33,11 +33,40 @@ npm install
 ```bash
 node server.js
 ```
+🐳 Running with Docker
+1️⃣ Build the Docker Image
+```bash
+docker build -t motivational-quotes-app .
+```
+### **2️⃣ Run the Docker Container**
+```bash
+docker run -p 3000:3000 motivational-quotes-app
+```
+Now, visit:
+```
+http://localhost:3000
+```
+
+📂 Project Structure
+```yaml
+quotation/
+├── public/           # Static files (CSS, Images)
+│   ├── styles.css       # Styling for the webpage
+│   ├── logo.png         # Logo displayed on the page
+│
+├── index.js          # Runs a random quote in terminal
+├── server.js         # Main Express server file
+├── quotes.js         # Fetches quotes from an external source
+├── package.json      # Project dependencies
+├── Dockerfile        # Docker instructions
+├── .dockerignore     # Files to ignore in Docker
+├── README.md         # Project documentation
+```
 
 ### 🛠️ Technologies Used
 - Node.js - JavaScript runtime
 - Express.js - Web framework
-- Axios - HTTP requests
+- Axios - HTTP requestsr
 - PapaParse - CSV file parsing
 - Docker - Containerization
 - HTML/CSS - Frontend styling
