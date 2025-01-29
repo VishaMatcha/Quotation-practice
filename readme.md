@@ -23,15 +23,12 @@ Ensure you have the following installed:
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
 
-3️⃣ Install Dependencies
-bash
-Copy
-Edit
+### **3️⃣ Install Dependencies**
+```bash
 npm install
+
 4️⃣ Run the Application
-bash
-Copy
-Edit
+```bash
 node server.js
 Now, open your browser and visit:
 
