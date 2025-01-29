@@ -22,15 +22,17 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
-```
-### **3️⃣ Install Dependencies**
-```bash
+
+3️⃣ Install Dependencies
+bash
+Copy
+Edit
 npm install
-```
-### **4️⃣ Run the Application**
-```bash
+4️⃣ Run the Application
+bash
+Copy
+Edit
 node server.js
-```
 Now, open your browser and visit:
 
 arduino
