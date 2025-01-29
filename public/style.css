@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the content */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #c3d9f1, #e8f0fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    padding: 0 15px;
+}
+
+/* Quote container styling */
+.container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 85%;
+    transform: translateY(40px);
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Fade-in animation for quote container */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style for the quote */
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the quote */
+h1:hover {
+    color: #0077b6; /* Soft dark blue */
+    transform: translateY(-8px);
+}
+
+/* Style for the author */
+p {
+    font-size: 1.5em;
+    color: #888;
+    font-weight: 500;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the author */
+p:hover {
+    color: #0077b6;
+    transform: translateY(5px);
+}
+
+/* Adding some responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+}
+
