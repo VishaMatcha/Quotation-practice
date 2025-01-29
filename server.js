@@ -1,13 +1,11 @@
 const express = require('express');
-const getRandomQuote = require('./quotes'); // Import the getRandomQuote function
+const getRandomQuote = require('./quotes');
 
-const app = express(); // Create an Express app
-const PORT = 3000; // Define the port
+const app = express();
+const PORT = 3000;
 
-// Serve static files (CSS file) from a public folder
 app.use(express.static('public'));
 
-// Route to display a random quote
 app.get('/', async (req, res) => {
     const quote = await getRandomQuote();
     res.send(`
@@ -25,7 +23,6 @@ app.get('/', async (req, res) => {
     `);
 });
 
-// Start the server
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
